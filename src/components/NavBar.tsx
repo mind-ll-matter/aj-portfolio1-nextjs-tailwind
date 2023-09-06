@@ -2,7 +2,12 @@ import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import {TwitterIcon, GithubIcon, LinkedinIcon, SunIcon, MoonIcon} from "./Icons";
+
+// import {TwitterIcon, GithubIcon, LinkedinIcon, SunIcon, MoonIcon} from "./Icons";
+import {TwitterIcon, GithubIcon, LinkedinIcon} from "./Icons";
+import SunIcon from '../../public/images/svgs/sunny-filled-loop-to-moon-filled-loop-transition.svg'
+import MoonIcon from '../../public/images/svgs/moon-filled-to-sunny-filled-loop-transition.svg'
+
 import {motion} from "framer-motion"
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
