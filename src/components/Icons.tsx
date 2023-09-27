@@ -11,22 +11,274 @@ interface TypeIcons extends React.ComponentProps<"svg"> {
 }
 type SvgInHtml = HTMLElement & SVGElement
 
-export const TwitterIcon = ({ className, ...rest }: TypeIcons) => (
-<svg
+export const SunIcon4 = ({ className, ...rest }: TypeIcons) => (
+  <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1.23em"
-    height="1em"
-    viewBox="0 0 256 209"
-    className={`w-full h-auto ${className}`}
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
     {...rest}
+    className={`w-full h-auto ${className}`}
   >
-    <path fill="rgba(255, 255, 255, 0)" d="M0 0h256v209H0z" />
-    <path
-      fill="#55acee"
-      d="M256 25.45a105.04 105.04 0 0 1-30.166 8.27c10.845-6.5 19.172-16.793 23.093-29.057a105.183 105.183 0 0 1-33.351 12.745C205.995 7.201 192.346.822 177.239.822c-29.006 0-52.523 23.516-52.523 52.52 0 4.117.465 8.125 1.36 11.97-43.65-2.191-82.35-23.1-108.255-54.876-4.52 7.757-7.11 16.78-7.11 26.404 0 18.222 9.273 34.297 23.365 43.716a52.312 52.312 0 0 1-23.79-6.57c-.003.22-.003.44-.003.661 0 25.447 18.104 46.675 42.13 51.5a52.592 52.592 0 0 1-23.718.9c6.683 20.866 26.08 36.05 49.062 36.475-17.975 14.086-40.622 22.483-65.228 22.483-4.24 0-8.42-.249-12.529-.734 23.243 14.902 50.85 23.597 80.51 23.597 96.607 0 149.434-80.031 149.434-149.435 0-2.278-.05-4.543-.152-6.795A106.748 106.748 0 0 0 256 25.45"
-    />
+    <g>
+      <animateTransform
+        fill="none"
+        stroke="currentColor"
+        strokeDasharray={2}
+        strokeDashoffset={2}
+        strokeLinecap="round"
+        strokeWidth={2}
+        attributeName="transform"
+        dur="30s"
+        repeatCount="indefinite"
+        type="rotate"
+        values="0 12 12;360 12 12"
+      />
+    </g>
+    <g fill="currentColor">
+      <path d="m15.22 6.03 2.53-1.94L14.56 4 13.5 1l-1.06 3-3.19.09 2.53 1.94-.91 3.06 2.63-1.81 2.63 1.81-.91-3.06Z">
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          dur="0.4s"
+          values="1;0"
+        />
+      </path>
+      <path d="M19.61 12.25 21.25 11l-2.06-.05L18.5 9l-.69 1.95-2.06.05 1.64 1.25-.59 1.98 1.7-1.17 1.7 1.17-.59-1.98Z">
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          begin="0.2s"
+          dur="0.4s"
+          values="1;0"
+        />
+      </path>
+    </g>
+    <g
+      fill="currentColor"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+    >
+      <path d="M7 6a10.994 10.994 0 0 0 12.56 10.89C17.95 19.36 15.17 21 12 21a9 9 0 0 1-9-9c0-3.17 1.64-5.95 4.11-7.56C7.04 4.95 7 5.47 7 6Z" />
+      {/*// @ts-ignore */}
+      <set attributeName="opacity" begin="0.6s" to={0} />
+    </g>
+    <mask id="a">
+      <circle cx={12} cy={12} r={12} fill="#fff" />
+      <circle cx={18} cy={6} r={12} fill="#fff">
+        <animate
+          fill="freeze"
+          attributeName="cx"
+          begin="0.6s"
+          dur="0.4s"
+          values="18;22"
+        />
+        <animate
+          fill="freeze"
+          attributeName="cy"
+          begin="0.6s"
+          dur="0.4s"
+          values="6;2"
+        />
+        <animate
+          fill="freeze"
+          attributeName="r"
+          begin="0.6s"
+          dur="0.4s"
+          values="12;3"
+        />
+      </circle>
+      <circle cx={18} cy={6} r={10}>
+        <animate
+          fill="freeze"
+          attributeName="cx"
+          begin="0.6s"
+          dur="0.4s"
+          values="18;22"
+        />
+        <animate
+          fill="freeze"
+          attributeName="cy"
+          begin="0.6s"
+          dur="0.4s"
+          values="6;2"
+        />
+        <animate
+          fill="freeze"
+          attributeName="r"
+          begin="0.6s"
+          dur="0.4s"
+          values="10;1"
+        />
+      </circle>
+    </mask>
   </svg>
+)
 
+export const MoonIcon4 = ({ className, ...rest }: TypeIcons) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    {...rest}
+    className={`w-full h-auto ${className}`}
+  >
+    <g
+      fill="none"
+      stroke="currentColor"
+      strokeDasharray={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+    >
+      <path d="M12 21v1m9-10h1M12 3V2M3 12H2">
+        <animate
+          fill="freeze"
+          attributeName="stroke-dashoffset"
+          dur="0.2s"
+          values="4;2"
+        />
+      </path>
+      <path d="m18.5 18.5.5.5m-.5-13.5L19 5m-13.5.5L5 5m.5 13.5L5 19">
+        <animate
+          fill="freeze"
+          attributeName="stroke-dashoffset"
+          begin="0.2s"
+          dur="0.2s"
+          values="4;2"
+        />
+      </path>
+    </g>
+    <g fill="none" fillOpacity={0}>
+      <path d="m15.22 6.03 2.53-1.94L14.56 4 13.5 1l-1.06 3-3.19.09 2.53 1.94-.91 3.06 2.63-1.81 2.63 1.81z">
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          begin="0.6s;lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+6s"
+          dur="0.4s"
+          values="0;1"
+        />
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.2s"
+          dur="0.4s"
+          values="1;0"
+        />
+      </path>
+      <path d="M13.61 5.25 15.25 4l-2.06-.05L12.5 2l-.69 1.95L9.75 4l1.64 1.25-.59 1.98 1.7-1.17 1.7 1.17z">
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3s"
+          dur="0.4s"
+          values="0;1"
+        />
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.2s"
+          dur="0.4s"
+          values="1;0"
+        />
+      </path>
+      <path d="M19.61 12.25 21.25 11l-2.06-.05L18.5 9l-.69 1.95-2.06.05 1.64 1.25-.59 1.98 1.7-1.17 1.7 1.17z">
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+0.4s"
+          dur="0.4s"
+          values="0;1"
+        />
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.8s"
+          dur="0.4s"
+          values="1;0"
+        />
+      </path>
+      <path d="m20.828 9.731 1.876-1.439-2.366-.067L19.552 6l-.786 2.225-2.366.067 1.876 1.439L17.601 12l1.951-1.342L21.503 12z">
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3.4s"
+          dur="0.4s"
+          values="0;1"
+        />
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.6s"
+          dur="0.4s"
+          values="1;0"
+        />
+      </path>
+    </g>
+    <mask id="a">
+      <circle cx={12} cy={12} r={12} fill="#fff" />
+      <circle cx={22} cy={2} r={3} fill="#fff">
+        <animate
+          fill="freeze"
+          attributeName="cx"
+          begin="0.1s"
+          dur="0.4s"
+          values="22;18"
+        />
+        <animate
+          fill="freeze"
+          attributeName="cy"
+          begin="0.1s"
+          dur="0.4s"
+          values="2;6"
+        />
+        <animate
+          fill="freeze"
+          attributeName="r"
+          begin="0.1s"
+          dur="0.4s"
+          values="3;12"
+        />
+      </circle>
+      <circle cx={22} cy={2} r={1}>
+        <animate
+          fill="freeze"
+          attributeName="cx"
+          begin="0.1s"
+          dur="0.4s"
+          values="22;18"
+        />
+        <animate
+          fill="freeze"
+          attributeName="cy"
+          begin="0.1s"
+          dur="0.4s"
+          values="2;6"
+        />
+        <animate
+          fill="freeze"
+          attributeName="r"
+          begin="0.1s"
+          dur="0.4s"
+          values="1;10"
+        />
+      </circle>
+    </mask>
+    <circle cx={12} cy={12} r={6} fill="currentColor" mask="url(#a)">
+      {/*// @ts-ignore */}
+      <set attributeName="opacity" begin="0.5s" to={0} />
+      <animate
+        fill="freeze"
+        attributeName="r"
+        begin="0.1s"
+        dur="0.4s"
+        values="6;10"
+      />
+    </circle>
+  </svg>
 )
 
 // export const SunIcon = (props: SVGProps<SVGSVGElement>) => (
@@ -367,8 +619,8 @@ export const TwitterIcon = ({ className, ...rest }: TypeIcons) => (
 //       </circle>
 //     </mask>
 //     <circle cx={12} cy={12} r={6} fill="currentColor" mask="url(#a)">
-//       <set attributeName="opacity" begin="0.5s" to={0} />
-//       <animate attributeName="opacity" begin="0.5s" to={0} />
+//       {/* <set attributeName="opacity" begin="0.5s" to={0} /> */}
+//       <animate attributeName="opacity" begin="0.5s" to={1} />
 //       <animate
 //         fill="freeze"
 //         attributeName="r"
@@ -376,6 +628,24 @@ export const TwitterIcon = ({ className, ...rest }: TypeIcons) => (
 //         dur="0.4s"
 //         values="6;10"
 //       />
+//           {/* Use React.createElement to create the <set> element */}
+    // {/* {React.createElement("set", {
+    //   attributeName: "opacity",
+    //   begin: "0.5s",
+    //   to: 0,
+    // })}
+//     {React.createElement("animate", {
+//       attributeName: "opacity",
+//       begin: "0.5s",
+//       to: 0,
+//     })}
+//     {React.createElement("animate", {
+//       fill: "freeze",
+//       attributeName: "r",
+//       begin: "0.1s",
+//       dur: "0.4s",
+//       values: "6;10",
+//     })} */}
 //     </circle>
 //   </svg>
 // )
@@ -433,7 +703,18 @@ export const TwitterIcon = ({ className, ...rest }: TypeIcons) => (
 //     >
 //       <path d="M7 6a10.994 10.994 0 0 0 12.56 10.89C17.95 19.36 15.17 21 12 21a9 9 0 0 1-9-9c0-3.17 1.64-5.95 4.11-7.56C7.04 4.95 7 5.47 7 6Z" />
 //       {/* <set attributeName="opacity" begin="0.6s" to={0} /> */}
-//       <animate attributeName="opacity" begin="0.6s" to={0} />
+//       <animate attributeName="opacity" begin="0.6s" to={1} />
+//     {/* Use React.createElement to create the <set> element */}
+//     {/* {React.createElement("set", {
+//       attributeName: "opacity",
+//       begin: "0.6s",
+//       to: 0,
+//     })}
+//     {React.createElement("animate", {
+//       attributeName: "opacity",
+//       begin: "0.6s",
+//       to: 0,
+//     })} */}
 //     </g>
 //     <mask id="a">
 //       <circle cx={12} cy={12} r={12} fill="#fff" />
@@ -647,7 +928,23 @@ export const TwitterIcon = ({ className, ...rest }: TypeIcons) => (
 // export const LinkedinIcon = (props: SVGProps<SVGSVGElement>) => (
 
 
-
+export const TwitterIcon = ({ className, ...rest }: TypeIcons) => (
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1.23em"
+      height="1em"
+      viewBox="0 0 256 209"
+      className={`w-full h-auto ${className}`}
+      {...rest}
+    >
+      <path fill="rgba(255, 255, 255, 0)" d="M0 0h256v209H0z" />
+      <path
+        fill="#55acee"
+        d="M256 25.45a105.04 105.04 0 0 1-30.166 8.27c10.845-6.5 19.172-16.793 23.093-29.057a105.183 105.183 0 0 1-33.351 12.745C205.995 7.201 192.346.822 177.239.822c-29.006 0-52.523 23.516-52.523 52.52 0 4.117.465 8.125 1.36 11.97-43.65-2.191-82.35-23.1-108.255-54.876-4.52 7.757-7.11 16.78-7.11 26.404 0 18.222 9.273 34.297 23.365 43.716a52.312 52.312 0 0 1-23.79-6.57c-.003.22-.003.44-.003.661 0 25.447 18.104 46.675 42.13 51.5a52.592 52.592 0 0 1-23.718.9c6.683 20.866 26.08 36.05 49.062 36.475-17.975 14.086-40.622 22.483-65.228 22.483-4.24 0-8.42-.249-12.529-.734 23.243 14.902 50.85 23.597 80.51 23.597 96.607 0 149.434-80.031 149.434-149.435 0-2.278-.05-4.543-.152-6.795A106.748 106.748 0 0 0 256 25.45"
+      />
+    </svg>
+  
+  )
 
 export const LinkedinIcon = ({ className, ...rest }: TypeIcons) => (
   <svg 
@@ -673,8 +970,8 @@ export const LinkedinIcon = ({ className, ...rest }: TypeIcons) => (
   export const GithubIcon = ({ className, ...rest }: TypeIcons) => (
     <svg 
     xmlns="http://www.w3.org/2000/svg" 
-    width="1.23em"
-    height="1em"
+    // width="1.23em"
+    // height="1em"
     viewBox="0 0 512 512"
     className={`w-full h-auto ${className}`}
     {...rest}>
@@ -748,4 +1045,142 @@ export const CircularText2 = ({ className, ...rest }: TypeIcons) => (
   </svg>
 );
 
+
+export const GmailIcon = ({ className, ...rest }: TypeIcons) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={800}
+    height={800}
+    imageRendering="optimizeQuality"
+    shapeRendering="geometricPrecision"
+    textRendering="geometricPrecision"
+    viewBox="7.086 -169.483 1277.149 1277.149"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+    >
+    <path fill="none" d="M1138.734 931.095h.283m0 0h-.283" />
+    <path
+      fill="#e75a4d"
+      d="M1179.439 7.087c57.543 0 104.627 47.083 104.627 104.626v30.331l-145.36 103.833-494.873 340.894L148.96 242.419v688.676h-37.247c-57.543 0-104.627-47.082-104.627-104.625V111.742C7.086 54.198 54.17 7.115 111.713 7.115l532.12 394.525L1179.41 7.115l.029-.028z"
+    />
+    <linearGradient
+      id="a"
+      x1={1959.712}
+      x2={26066.213}
+      y1={737.107}
+      y2={737.107}
+      gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset={0} stopColor="#f8f6ef" />
+      <stop offset={1} stopColor="#e7e4d6" />
+    </linearGradient>
+    <path fill="url(#a)" d="m111.713 7.087 532.12 394.525L1179.439 7.087z" />
+    <path
+      fill="#e7e4d7"
+      d="M148.96 242.419v688.676h989.774V245.877L643.833 586.771z"
+    />
+    <path
+      fill="#b8b7ae"
+      d="m148.96 931.095 494.873-344.324-2.24-1.586L148.96 923.527z"
+    />
+    <path fill="#b7b6ad" d="m1138.734 245.877.283 685.218-495.184-344.324z" />
+    <path
+      fill="#b2392f"
+      d="m1284.066 142.044.17 684.51c-2.494 76.082-35.461 103.238-145.219 104.514l-.283-685.219 145.36-103.833-.028.028z"
+    />
+    <linearGradient
+      id="b"
+      x1={1959.712}
+      x2={26066.213}
+      y1={737.107}
+      y2={737.107}
+      gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset={0} stopColor="#f8f6ef" />
+      <stop offset={1} stopColor="#e7e4d6" />
+    </linearGradient>
+    <path fill="url(#b)" d="m111.713 7.087 532.12 394.525L1179.439 7.087z" />
+    <linearGradient
+      id="c"
+      x1={1959.712}
+      x2={26066.213}
+      y1={737.107}
+      y2={737.107}
+      gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset={0} stopColor="#f8f6ef" />
+      <stop offset={1} stopColor="#e7e4d6" />
+    </linearGradient>
+    <path fill="url(#c)" d="m111.713 7.087 532.12 394.525L1179.439 7.087z" />
+    <linearGradient
+      id="d"
+      x1={1959.712}
+      x2={26066.213}
+      y1={737.107}
+      y2={737.107}
+      gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset={0} stopColor="#f8f6ef" />
+      <stop offset={1} stopColor="#e7e4d6" />
+    </linearGradient>
+    <path fill="url(#d)" d="m111.713 7.087 532.12 394.525L1179.439 7.087z" />
+    <linearGradient
+      id="e"
+      x1={1959.712}
+      x2={26066.213}
+      y1={737.107}
+      y2={737.107}
+      gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset={0} stopColor="#f8f6ef" />
+      <stop offset={1} stopColor="#e7e4d6" />
+    </linearGradient>
+    <path fill="url(#e)" d="m111.713 7.087 532.12 394.525L1179.439 7.087z" />
+    <linearGradient
+      id="f"
+      x1={1959.712}
+      x2={26066.213}
+      y1={737.107}
+      y2={737.107}
+      gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset={0} stopColor="#f8f6ef" />
+      <stop offset={1} stopColor="#e7e4d6" />
+    </linearGradient>
+    <path fill="url(#f)" d="m111.713 7.087 532.12 394.525L1179.439 7.087z" />
+    <linearGradient
+      id="g"
+      x1={1959.712}
+      x2={26066.213}
+      y1={737.107}
+      y2={737.107}
+      gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset={0} stopColor="#f8f6ef" />
+      <stop offset={1} stopColor="#e7e4d6" />
+    </linearGradient>
+    <path fill="url(#g)" d="m111.713 7.087 532.12 394.525L1179.439 7.087z" />
+    <linearGradient
+      id="h"
+      x1={1959.712}
+      x2={26066.213}
+      y1={737.107}
+      y2={737.107}
+      gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset={0} stopColor="#f8f6ef" />
+      <stop offset={1} stopColor="#e7e4d6" />
+    </linearGradient>
+    <path fill="url(#h)" d="m111.713 7.087 532.12 394.525L1179.439 7.087z" />
+    <path fill="#f7f5ed" d="m111.713 7.087 532.12 394.525L1179.439 7.087z" />
+  </svg>
+)
 

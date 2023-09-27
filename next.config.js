@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 // const nextConfig = {}
-
 // module.exports = nextConfig
 
 module.exports = {
@@ -9,7 +8,6 @@ module.exports = {
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.(".svg")
     );
-
     config.module.rules.push(
       // Reapply the existing rule, but only for svg imports ending in ?url
       {
@@ -28,9 +26,6 @@ module.exports = {
 
     // Modify the file loader rule to ignore *.svg, since we have it handled now.
     fileLoaderRule.exclude = /\.svg$/i;
-
     return config;
   },
-
-  // ...other config
 };
