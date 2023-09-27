@@ -25,6 +25,7 @@ export default function App(props: AppType) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
+        // min-h-screen
         className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}
       >
         <NavBar />

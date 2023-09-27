@@ -77,6 +77,13 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
+            position="Bartender"
+            company="Schapiro's Sports Bar & Restaurant"
+            companyLink="https://www.schapirossportsbar.co.nz"
+            time="2023"
+            work="Collaborating and working in a fast-paced, high-pressure evironment, while giving customers the best experience possible."
+          />
+          <Details
             position="Founder"
             company="SI'I Outreach Project"
             companyLink="https://www.spiesuoa.co.nz/outreach.html"
