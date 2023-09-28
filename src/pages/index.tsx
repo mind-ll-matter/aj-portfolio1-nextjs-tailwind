@@ -23,7 +23,7 @@ export default function Home() {
 
         <meta property="og:type" content="article" />
 
-        <meta property="og:title" content="AJs temporary portfolio page" />
+        <meta property="og:title" content="AJ Evile" />
 
         <meta property="og:description" content="AJ at a glance" />
 
