@@ -11,6 +11,7 @@ import {
   useAnimation,
   useTransform,
 } from "framer-motion";
+import Image from "next/image";
 
 const MotionLink = motion(Link);
 
@@ -45,7 +46,7 @@ const Logo = () => {
         }}
         // onMouseLeave={handleHoverEnd}
       >
-        <img src="./images/logo/AJ-transparent.png" alt="AJ-Logo" />
+        <Image src="./images/logo/AJ-transparent.png" alt="AJ-Logo" />
       </MotionLink>
     </div>
   );

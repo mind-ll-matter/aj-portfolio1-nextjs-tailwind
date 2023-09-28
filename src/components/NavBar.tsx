@@ -128,7 +128,7 @@ const NavBar = () => {
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="https://twitter.com"
+            href="https://twitter.com/ajevile"
             target={"_blank"}
             whileHover={{ y: -2 }}
             className="w-5 mr-3"
@@ -137,7 +137,7 @@ const NavBar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="https://linkedin.com"
+            href="https://github.com/mind-ll-matter"
             target={"_blank"}
             whileHover={{ y: -2 }}
             className="w-7 mr-3"
@@ -146,7 +146,7 @@ const NavBar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/ajevile/"
             target={"_blank"}
             whileHover={{ y: -2 }}
             className="w-6 mr-3"
