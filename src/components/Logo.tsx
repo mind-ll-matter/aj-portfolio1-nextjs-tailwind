@@ -46,7 +46,11 @@ const Logo = () => {
         }}
         // onMouseLeave={handleHoverEnd}
       >
-        <Image src="./images/logo/AJ-transparent.png" alt="AJ-Logo" />
+        <img
+          className="w-full"
+          src="./images/logo/AJ-transparent.png"
+          alt="AJ-Logo"
+        />
       </MotionLink>
     </div>
   );
