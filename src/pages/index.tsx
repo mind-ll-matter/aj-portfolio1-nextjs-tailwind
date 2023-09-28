@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>AJ is the man</title>
-        <meta name="AJs temporary portfolio page" content="AJ at a glance" />
+        <title>AJ Evile</title>
+        <meta name="AJ Evile" content="AJ at a glance" />
         <meta property="og:URL" content="./images/profile/profile2-crop.jpg" />
 
         <meta property="og:type" content="article" />
