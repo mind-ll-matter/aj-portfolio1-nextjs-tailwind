@@ -39,7 +39,7 @@ type TypeMovingImg = {
 const MovingImg = ({ title, img, link }: TypeMovingImg) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  const imgRef = useRef(null);
+  const imgRef = useRef(document.createElement("div"));
 
   const handleMouse = (event: any) => {
     imgRef.current.style.display = "inline-block";
@@ -174,7 +174,7 @@ const blogs = () => {
           </h2>
           <ul>
             <Article
-              title="Here is where we will add more articles that we create. I won't need this part right now though."
+              title="Here is where we will add more articles that we create. I won&apos;t need this part right now though."
               img={article3}
               date="26/09/2023"
               link="/"
@@ -198,7 +198,7 @@ const blogs = () => {
               link="/"
             />
             <Article
-              title="Here is where we will add more articles that we create. I won't need this part right now though."
+              title="Here is where we will add more articles that we create. I won&apos;t need this part right now though."
               img={article3}
               date="26/09/2023"
               link="/"
