@@ -56,23 +56,23 @@ const about = () => {
                 Kia ora
               </h2>
               <p className="font-medium">
-                I'm AJ, a web developer and UI/UX designer with passion for new
-                and innovative ideas. I've fallen in love with technology and
-                how it can be used to help our communities in Aotearoa and world
-                wide.
+                I&apos;m AJ, a web developer and UI/UX designer with passion for
+                new and innovative ideas. I&apos;ve fallen in love with
+                technology and how it can be used to help our communities in
+                Aotearoa and world wide.
               </p>
               <p className="font-medium my-4">
                 Having studied Biomedical Engineering at the University of
                 Auckland, I also have a deep interest in human biology and
-                psychology - what we're made of, how we operate and how we
+                psychology - what we&apos;re made of, how we operate and how we
                 think. This appreciation for the sciences, I believe, sets me
                 apart from your typical software developer. I love turning
                 thoughts into reality, and seeing how it can make the world a
                 better place.
               </p>
               <p className="font-medium">
-                If you'd like to take to an idea from mind to matter, let's grab
-                a coffee!
+                If you&apos;d like to take to an idea from mind to matter,
+                let&apos;s grab a coffee!
               </p>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
